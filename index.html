@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DebrisX | Designing the Future of Space Debris Cleaning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0e1a2b;
+      color: #d0d0d0;
+    }
+    nav {
+      background-color: #141f35;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600423115367-f20b0c15a193') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-shadow: 0 0 8px #000;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #00aaff;
+      margin-bottom: 1rem;
+    }
+    .vision-card {
+      background-color: #1c2a3f;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 170, 255, 0.2);
+      margin-top: 1rem;
+    }
+    .mvp-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .mvp-card {
+      background: linear-gradient(145deg, #1c2a3f, #243756);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 170, 255, 0.15);
+      transition: transform 0.3s ease;
+    }
+    .mvp-card:hover {
+      transform: translateY(-5px);
+    }
+    .team-info {
+      background-color: #1c2a3f;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+    .team-member {
+      margin-bottom: 1.5rem;
+    }
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 350px;
+      background-color: #1c2a3f;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 170, 255, 0.2);
+      display: none;
+      z-index: 1000;
+    }
+    .chat-header {
+      background-color: #00aaff;
+      color: white;
+      padding: 1rem;
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chat-body {
+      height: 300px;
+      overflow-y: auto;
+      padding: 1rem;
+    }
+    .chat-input {
+      padding: 1rem;
+      border-top: 1px solid #243756;
+    }
+    .chat-input input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #00aaff;
+      border-radius: 4px;
+      background-color: #243756;
+      color: white;
+    }
+    .chat-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 170, 255, 0.3);
+      z-index: 999;
+    }
+    footer {
+      background-color: #141f35;
+      color: #888;
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>DebrisX</strong></div>
+    <div>
+      <a href="#vision">Vision AI</a>
+      <a href="#problem">The Problem</a>
+      <a href="#solution">Our Solution</a>
+      <a href="#mvp">MVP</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Designing the Future of Space Debris Cleaning</h1>
+  </section>
+
+  <section class="section" id="vision">
+    <h2>Vision AI Net</h2>
+    <div class="vision-card">
+      <p><strong>Vision AI Net</strong> is our proprietary intelligence engine designed to detect, predict, and assist robotic operations in clearing orbital debris. It leverages a distributed AI system trained on thousands of orbital scenarios to deliver real-time analysis and trajectory predictions with over 95% accuracy.</p>
+      <p>Our Vision AI is currently integrated into simulated testbeds and is ready for deployment in coordination with autonomous orbital robots.</p>
+      <video width="100%" controls>
+        <source src="https://www.debrisx.space/vision-ai-demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="section" id="problem">
+    <h2>The Problem</h2>
+    <p>There are over 36,000 pieces of trackable space debris in Earth's orbit, costing $1.5 billion annually in damage and threat to satellites and future missions. With the rise of mega-constellations like Starlink, this issue is escalating rapidly.</p>
+  </section>
+
+  <section class="section" id="solution">
+    <h2>Our Solution</h2>
+    <p>DebrisX utilizes AI-enhanced tracking, predictive analytics, and autonomous robots to intercept and neutralize space debris with 40% lower cost and higher efficiency than legacy systems. Our robots mimic the mechanics of ELSA-d and are integrated with a command-control center powered by AWS and NVIDIA Jetson modules.</p>
+  </section>
+
+  <section class="section" id="mvp">
+    <h2>Minimum Viable Product</h2>
+    <div class="mvp-section">
+      <div class="mvp-card">
+        <h3>Debris Detection System</h3>
+        <p>AI-powered optical tracking system capable of identifying debris as small as 1cm in diameter with 99% accuracy.</p>
+      </div>
+      <div class="mvp-card">
+        <h3>Trajectory Prediction</h3>
+        <p>Real-time orbital path calculation and collision risk assessment using our proprietary Vision AI Net.</p>
+      </div>
+      <div class="mvp-card">
+        <h3>Autonomous Navigation</h3>
+        <p>Self-guided debris interception system with advanced obstacle avoidance and fuel optimization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="team">
+    <h2>Our Team</h2>
+    <div class="team-info">
+      <div class="team-member">
+        <h3>CEO/Founder</h3>
+        <p>ABD ELRAHMAN KHALID</p>
+      </div>
+      <div class="team-member">
+        <h3>Relationship Manager</h3>
+        <p>KHALID SABER</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>For partnerships, investments, or technical inquiries:</p>
+    <p>📧 E: gaballpasha@gmail.com</p>
+    <p>📱 T: +201030276276</p>
+    <p>Follow our journey on <a href="https://linkedin.com/company/debrisx" target="_blank" style="color: #00aaff;">LinkedIn</a></p>
+  </section>
+
+  <button class="chat-toggle" onclick="toggleChat()">💬</button>
+  
+  <div class="chatbot" id="chatbot">
+    <div class="chat-header">
+      <span>Chat with CEO</span>
+      <button onclick="toggleChat()" style="background: none; border: none; color: white; cursor: pointer;">✕</button>
+    </div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message..." onkeypress="handleKeyPress(event)" id="chat-input">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 DebrisX. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleChat() {
+      const chatbot = document.getElementById('chatbot');
+      const chatToggle = document.querySelector('.chat-toggle');
+      chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+      chatToggle.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function addMessage(message, isUser = false) {
+      const chatBody = document.getElementById('chat-body');
+      const messageDiv = document.createElement('div');
+      messageDiv.style.margin = '10px';
+      messageDiv.style.padding = '10px';
+      messageDiv.style.borderRadius = '10px';
+      messageDiv.style.maxWidth = '80%';
+      messageDiv.style.wordWrap = 'break-word';
+      
+      if (isUser) {
+        messageDiv.style.marginLeft = 'auto';
+        messageDiv.style.backgroundColor = '#00aaff';
+        messageDiv.style.color = 'white';
+      } else {
+        messageDiv.style.backgroundColor = '#243756';
+        messageDiv.style.color = '#d0d0d0';
+      }
+      
+      messageDiv.textContent = message;
+      chatBody.appendChild(messageDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function handleKeyPress(event) {
+      if (event.key === 'Enter') {
+        const input = document.getElementById('chat-input');
+        const message = input.value.trim();
+        
+        if (message) {
+          addMessage(message, true);
+          input.value = '';
+          
+          // Simulate CEO response
+          setTimeout(() => {
+            const responses = {
+              'hello': 'Hello! I\'m Abd ElRahman Khalid, CEO of DebrisX. How can I help you today?',
+              'hi': 'Hi there! I\'m Abd ElRahman Khalid, CEO of DebrisX. What would you like to know about our space debris cleaning solution?',
+              'investment': 'We\'re currently in our Series A funding round. Our innovative approach to space debris cleaning has shown promising results with a 40% cost reduction compared to traditional methods.',
+              'technology': 'Our Vision AI Net is at the core of our technology. It\'s a proprietary system that combines AI-enhanced tracking with autonomous robots for efficient debris removal.',
+              'partnership': 'We\'re always open to strategic partnerships. You can reach me directly at gaballpasha@gmail.com to discuss potential collaboration opportunities.',
+              'team': 'We have a dedicated team of experts in orbital analytics, AI, and aerospace engineering. We\'re currently expanding our team - feel free to send your CV if you\'re interested in joining us.',
+              'default': 'Thank you for your interest in DebrisX. For specific inquiries, please email me at gaballpasha@gmail.com or call +201030276276.'
+            };
+
+            const lowercaseMessage = message.toLowerCase();
+            let response = responses.default;
+            
+            Object.keys(responses).forEach(key => {
+              if (lowercaseMessage.includes(key)) {
+                response = responses[key];
+              }
+            });
+
+            addMessage(response);
+          }, 1000);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
